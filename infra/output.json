@@ -1,0 +1,925 @@
+{
+  "acm": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "arn": "string",
+        "certificate_body": "string",
+        "certificate_chain": "string",
+        "domain_name": "string",
+        "domain_validation_options": [
+          "list",
+          [
+            "object",
+            {
+              "domain_name": "string",
+              "resource_record_name": "string",
+              "resource_record_type": "string",
+              "resource_record_value": "string"
+            }
+          ]
+        ],
+        "id": "string",
+        "private_key": "string",
+        "subject_alternative_names": [
+          "list",
+          "string"
+        ],
+        "tags": [
+          "map",
+          "string"
+        ],
+        "validation_emails": [
+          "list",
+          "string"
+        ],
+        "validation_method": "string"
+      }
+    ],
+    "value": {
+      "arn": "arn:aws:acm:ap-southeast-1:814127428874:certificate/6ce621af-2a06-42e7-bbfd-de67898ddb37",
+      "certificate_body": null,
+      "certificate_chain": null,
+      "domain_name": "ros.perxtech.org",
+      "domain_validation_options": [
+        {
+          "domain_name": "*.ros.perxtech.org",
+          "resource_record_name": "_b28a20a2e80e8125a9ebec1c797af35b.ros.perxtech.org.",
+          "resource_record_type": "CNAME",
+          "resource_record_value": "_2c546771626ea2ed01f326452c352dfb.ltfvzjuylp.acm-validations.aws."
+        },
+        {
+          "domain_name": "ros.perxtech.org",
+          "resource_record_name": "_b28a20a2e80e8125a9ebec1c797af35b.ros.perxtech.org.",
+          "resource_record_type": "CNAME",
+          "resource_record_value": "_2c546771626ea2ed01f326452c352dfb.ltfvzjuylp.acm-validations.aws."
+        }
+      ],
+      "id": "arn:aws:acm:ap-southeast-1:814127428874:certificate/6ce621af-2a06-42e7-bbfd-de67898ddb37",
+      "private_key": null,
+      "subject_alternative_names": [
+        "*.ros.perxtech.org"
+      ],
+      "tags": {},
+      "validation_emails": [],
+      "validation_method": "DNS"
+    }
+  },
+  "ec2": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "ami": "string",
+        "arn": "string",
+        "associate_public_ip_address": "bool",
+        "availability_zone": "string",
+        "cpu_core_count": "number",
+        "cpu_threads_per_core": "number",
+        "credit_specification": [
+          "list",
+          [
+            "object",
+            {
+              "cpu_credits": "string"
+            }
+          ]
+        ],
+        "disable_api_termination": "bool",
+        "ebs_block_device": [
+          "set",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "device_name": "string",
+              "encrypted": "bool",
+              "iops": "number",
+              "snapshot_id": "string",
+              "volume_id": "string",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "ebs_optimized": "bool",
+        "ephemeral_block_device": [
+          "set",
+          [
+            "object",
+            {
+              "device_name": "string",
+              "no_device": "bool",
+              "virtual_name": "string"
+            }
+          ]
+        ],
+        "get_password_data": "bool",
+        "host_id": "string",
+        "iam_instance_profile": "string",
+        "id": "string",
+        "instance_initiated_shutdown_behavior": "string",
+        "instance_state": "string",
+        "instance_type": "string",
+        "ipv6_address_count": "number",
+        "ipv6_addresses": [
+          "list",
+          "string"
+        ],
+        "key_name": "string",
+        "monitoring": "bool",
+        "network_interface": [
+          "set",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "device_index": "number",
+              "network_interface_id": "string"
+            }
+          ]
+        ],
+        "network_interface_id": "string",
+        "password_data": "string",
+        "placement_group": "string",
+        "primary_network_interface_id": "string",
+        "private_dns": "string",
+        "private_ip": "string",
+        "public_dns": "string",
+        "public_ip": "string",
+        "root_block_device": [
+          "list",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "iops": "number",
+              "volume_id": "string",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "security_groups": [
+          "set",
+          "string"
+        ],
+        "source_dest_check": "bool",
+        "subnet_id": "string",
+        "tags": [
+          "map",
+          "string"
+        ],
+        "tenancy": "string",
+        "timeouts": [
+          "object",
+          {
+            "create": "string",
+            "delete": "string",
+            "update": "string"
+          }
+        ],
+        "user_data": "string",
+        "user_data_base64": "string",
+        "volume_tags": [
+          "map",
+          "string"
+        ],
+        "vpc_security_group_ids": [
+          "set",
+          "string"
+        ]
+      }
+    ],
+    "value": {
+      "ami": "ami-05dc0ead25207ba7b",
+      "arn": "arn:aws:ec2:ap-southeast-1:814127428874:instance/i-0012883b8ca794cc6",
+      "associate_public_ip_address": true,
+      "availability_zone": "ap-southeast-1a",
+      "cpu_core_count": 1,
+      "cpu_threads_per_core": 2,
+      "credit_specification": [
+        {
+          "cpu_credits": "unlimited"
+        }
+      ],
+      "disable_api_termination": false,
+      "ebs_block_device": [],
+      "ebs_optimized": false,
+      "ephemeral_block_device": [],
+      "get_password_data": false,
+      "host_id": null,
+      "iam_instance_profile": "",
+      "id": "i-0012883b8ca794cc6",
+      "instance_initiated_shutdown_behavior": null,
+      "instance_state": "running",
+      "instance_type": "t3.large",
+      "ipv6_address_count": 0,
+      "ipv6_addresses": [],
+      "key_name": "perx_admin",
+      "monitoring": false,
+      "network_interface": [],
+      "network_interface_id": null,
+      "password_data": "",
+      "placement_group": "",
+      "primary_network_interface_id": "eni-0ab61b6265dd1a8f9",
+      "private_dns": "ip-10-100-10-34.ap-southeast-1.compute.internal",
+      "private_ip": "10.100.10.34",
+      "public_dns": "ec2-18-139-236-96.ap-southeast-1.compute.amazonaws.com",
+      "public_ip": "18.139.236.96",
+      "root_block_device": [
+        {
+          "delete_on_termination": true,
+          "iops": 150,
+          "volume_id": "vol-053559e2dfca9c1d7",
+          "volume_size": 50,
+          "volume_type": "gp2"
+        }
+      ],
+      "security_groups": [],
+      "source_dest_check": true,
+      "subnet_id": "subnet-00b828a8e60b4618b",
+      "tags": {
+        "Name": "ros 89509e6585aef0c5"
+      },
+      "tenancy": "default",
+      "timeouts": null,
+      "user_data": "df784444dd47d88eadcc16a5f789ac7ed7dc4d70",
+      "user_data_base64": null,
+      "volume_tags": {},
+      "vpc_security_group_ids": [
+        "sg-09b3affff3bf09a18"
+      ]
+    }
+  },
+  "ec2-eip": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "allocation_id": "string",
+        "associate_with_private_ip": "string",
+        "association_id": "string",
+        "domain": "string",
+        "id": "string",
+        "instance": "string",
+        "network_interface": "string",
+        "private_dns": "string",
+        "private_ip": "string",
+        "public_dns": "string",
+        "public_ip": "string",
+        "public_ipv4_pool": "string",
+        "tags": [
+          "map",
+          "string"
+        ],
+        "timeouts": [
+          "object",
+          {
+            "delete": "string",
+            "read": "string",
+            "update": "string"
+          }
+        ],
+        "vpc": "bool"
+      }
+    ],
+    "value": {
+      "allocation_id": null,
+      "associate_with_private_ip": null,
+      "association_id": "eipassoc-07c113cceb1d92c4d",
+      "domain": "vpc",
+      "id": "eipalloc-0cd2a8831570dccb9",
+      "instance": "i-0012883b8ca794cc6",
+      "network_interface": "eni-0ab61b6265dd1a8f9",
+      "private_dns": "ip-10-100-10-34.ap-southeast-1.compute.internal",
+      "private_ip": "10.100.10.34",
+      "public_dns": "ec2-18-139-236-96.ap-southeast-1.compute.amazonaws.com",
+      "public_ip": "18.139.236.96",
+      "public_ipv4_pool": "amazon",
+      "tags": {},
+      "timeouts": null,
+      "vpc": true
+    }
+  },
+  "route53": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "comment": "string",
+        "delegation_set_id": "string",
+        "force_destroy": "bool",
+        "id": "string",
+        "name": "string",
+        "name_servers": [
+          "list",
+          "string"
+        ],
+        "tags": [
+          "map",
+          "string"
+        ],
+        "vpc": [
+          "set",
+          [
+            "object",
+            {
+              "vpc_id": "string",
+              "vpc_region": "string"
+            }
+          ]
+        ],
+        "vpc_id": "string",
+        "vpc_region": "string",
+        "zone_id": "string"
+      }
+    ],
+    "value": {
+      "comment": "Managed by Terraform",
+      "delegation_set_id": "",
+      "force_destroy": false,
+      "id": "Z156QMDDIZZLX4",
+      "name": "ros.perxtech.org.",
+      "name_servers": [
+        "ns-1287.awsdns-32.org",
+        "ns-1804.awsdns-33.co.uk",
+        "ns-323.awsdns-40.com",
+        "ns-747.awsdns-29.net"
+      ],
+      "tags": {},
+      "vpc": [],
+      "vpc_id": null,
+      "vpc_region": null,
+      "zone_id": "Z156QMDDIZZLX4"
+    }
+  },
+  "vpc": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "azs": [
+          "list",
+          "string"
+        ],
+        "database_network_acl_id": "string",
+        "database_route_table_ids": [
+          "list",
+          "string"
+        ],
+        "database_subnet_arns": [
+          "tuple",
+          []
+        ],
+        "database_subnet_group": "string",
+        "database_subnets": [
+          "tuple",
+          []
+        ],
+        "database_subnets_cidr_blocks": [
+          "tuple",
+          []
+        ],
+        "default_network_acl_id": "string",
+        "default_route_table_id": "string",
+        "default_security_group_id": "string",
+        "default_vpc_cidr_block": "string",
+        "default_vpc_default_network_acl_id": "string",
+        "default_vpc_default_route_table_id": "string",
+        "default_vpc_default_security_group_id": "string",
+        "default_vpc_enable_dns_hostnames": "string",
+        "default_vpc_enable_dns_support": "string",
+        "default_vpc_id": "string",
+        "default_vpc_instance_tenancy": "string",
+        "default_vpc_main_route_table_id": "string",
+        "elasticache_network_acl_id": "string",
+        "elasticache_route_table_ids": [
+          "list",
+          "string"
+        ],
+        "elasticache_subnet_arns": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "elasticache_subnet_group": "string",
+        "elasticache_subnet_group_name": "string",
+        "elasticache_subnets": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "elasticache_subnets_cidr_blocks": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "igw_id": "string",
+        "intra_network_acl_id": "string",
+        "intra_route_table_ids": [
+          "tuple",
+          []
+        ],
+        "intra_subnet_arns": [
+          "tuple",
+          []
+        ],
+        "intra_subnets": [
+          "tuple",
+          []
+        ],
+        "intra_subnets_cidr_blocks": [
+          "tuple",
+          []
+        ],
+        "name": "string",
+        "nat_ids": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "nat_public_ips": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "natgw_ids": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "private_network_acl_id": "string",
+        "private_route_table_ids": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "private_subnet_arns": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "private_subnets": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "private_subnets_cidr_blocks": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "public_network_acl_id": "string",
+        "public_route_table_ids": [
+          "tuple",
+          [
+            "string"
+          ]
+        ],
+        "public_subnet_arns": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "public_subnets": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "public_subnets_cidr_blocks": [
+          "tuple",
+          [
+            "string",
+            "string",
+            "string"
+          ]
+        ],
+        "redshift_network_acl_id": "string",
+        "redshift_route_table_ids": [
+          "list",
+          "string"
+        ],
+        "redshift_subnet_arns": [
+          "tuple",
+          []
+        ],
+        "redshift_subnet_group": "string",
+        "redshift_subnets": [
+          "tuple",
+          []
+        ],
+        "redshift_subnets_cidr_blocks": [
+          "tuple",
+          []
+        ],
+        "vgw_id": "string",
+        "vpc_arn": "string",
+        "vpc_cidr_block": "string",
+        "vpc_enable_dns_hostnames": "bool",
+        "vpc_enable_dns_support": "bool",
+        "vpc_endpoint_apigw_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_apigw_id": "string",
+        "vpc_endpoint_apigw_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_cloudtrail_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_cloudtrail_id": "string",
+        "vpc_endpoint_cloudtrail_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_dynamodb_id": "string",
+        "vpc_endpoint_dynamodb_pl_id": "string",
+        "vpc_endpoint_ec2_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ec2_id": "string",
+        "vpc_endpoint_ec2_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ec2messages_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ec2messages_id": "string",
+        "vpc_endpoint_ec2messages_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecr_api_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecr_api_id": "string",
+        "vpc_endpoint_ecr_api_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecr_dkr_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecr_dkr_id": "string",
+        "vpc_endpoint_ecr_dkr_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_agent_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_agent_id": "string",
+        "vpc_endpoint_ecs_agent_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_id": "string",
+        "vpc_endpoint_ecs_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_telemetry_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ecs_telemetry_id": "string",
+        "vpc_endpoint_ecs_telemetry_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_elasticloadbalancing_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_elasticloadbalancing_id": "string",
+        "vpc_endpoint_elasticloadbalancing_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_events_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_events_id": "string",
+        "vpc_endpoint_events_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_kms_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_kms_id": "string",
+        "vpc_endpoint_kms_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_logs_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_logs_id": "string",
+        "vpc_endpoint_logs_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_monitoring_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_monitoring_id": "string",
+        "vpc_endpoint_monitoring_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_s3_id": "string",
+        "vpc_endpoint_s3_pl_id": "string",
+        "vpc_endpoint_sns_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_sns_id": "string",
+        "vpc_endpoint_sns_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_sqs_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_sqs_id": "string",
+        "vpc_endpoint_sqs_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ssm_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ssm_id": "string",
+        "vpc_endpoint_ssm_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ssmmessages_dns_entry": [
+          "tuple",
+          []
+        ],
+        "vpc_endpoint_ssmmessages_id": "string",
+        "vpc_endpoint_ssmmessages_network_interface_ids": [
+          "tuple",
+          []
+        ],
+        "vpc_id": "string",
+        "vpc_instance_tenancy": "string",
+        "vpc_main_route_table_id": "string",
+        "vpc_secondary_cidr_blocks": [
+          "tuple",
+          []
+        ]
+      }
+    ],
+    "value": {
+      "azs": [
+        "ap-southeast-1a",
+        "ap-southeast-1b",
+        "ap-southeast-1c"
+      ],
+      "database_network_acl_id": "",
+      "database_route_table_ids": [
+        "rtb-09f8b4dfd536bece5",
+        "rtb-0173a46973c34d644",
+        "rtb-0f703b39d173ded0f"
+      ],
+      "database_subnet_arns": [],
+      "database_subnet_group": "",
+      "database_subnets": [],
+      "database_subnets_cidr_blocks": [],
+      "default_network_acl_id": "acl-0c6142c909e5d5ce1",
+      "default_route_table_id": "rtb-0a11994a20ca045ca",
+      "default_security_group_id": "sg-00822a152f7122cfa",
+      "default_vpc_cidr_block": "",
+      "default_vpc_default_network_acl_id": "",
+      "default_vpc_default_route_table_id": "",
+      "default_vpc_default_security_group_id": "",
+      "default_vpc_enable_dns_hostnames": "",
+      "default_vpc_enable_dns_support": "",
+      "default_vpc_id": "",
+      "default_vpc_instance_tenancy": "",
+      "default_vpc_main_route_table_id": "",
+      "elasticache_network_acl_id": "",
+      "elasticache_route_table_ids": [
+        "rtb-09f8b4dfd536bece5",
+        "rtb-0173a46973c34d644",
+        "rtb-0f703b39d173ded0f"
+      ],
+      "elasticache_subnet_arns": [
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-079408794120f7d0e",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-0fa09f75175c548b9",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-036cfe06f575b0581"
+      ],
+      "elasticache_subnet_group": "ros",
+      "elasticache_subnet_group_name": "ros",
+      "elasticache_subnets": [
+        "subnet-079408794120f7d0e",
+        "subnet-0fa09f75175c548b9",
+        "subnet-036cfe06f575b0581"
+      ],
+      "elasticache_subnets_cidr_blocks": [
+        "10.100.96.0/20",
+        "10.100.112.0/20",
+        "10.100.128.0/20"
+      ],
+      "igw_id": "igw-0357c51ca9385643b",
+      "intra_network_acl_id": "",
+      "intra_route_table_ids": [],
+      "intra_subnet_arns": [],
+      "intra_subnets": [],
+      "intra_subnets_cidr_blocks": [],
+      "name": "ros",
+      "nat_ids": [
+        "eipalloc-0cfc43c24e2a7de7c",
+        "eipalloc-0cf7fd8fe6ae81f95",
+        "eipalloc-0fea7d4e9ecdd9272"
+      ],
+      "nat_public_ips": [
+        "18.138.173.231",
+        "18.139.149.157",
+        "18.139.80.98"
+      ],
+      "natgw_ids": [
+        "nat-0c626750f191b870b",
+        "nat-02b57078f5b959c19",
+        "nat-02b1e29f048d26e17"
+      ],
+      "private_network_acl_id": "",
+      "private_route_table_ids": [
+        "rtb-09f8b4dfd536bece5",
+        "rtb-0173a46973c34d644",
+        "rtb-0f703b39d173ded0f"
+      ],
+      "private_subnet_arns": [
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-0220ddf839571d450",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-0a3a5d9fb2ae7881f",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-00db4474599e2569c"
+      ],
+      "private_subnets": [
+        "subnet-0220ddf839571d450",
+        "subnet-0a3a5d9fb2ae7881f",
+        "subnet-00db4474599e2569c"
+      ],
+      "private_subnets_cidr_blocks": [
+        "10.100.48.0/20",
+        "10.100.64.0/20",
+        "10.100.80.0/20"
+      ],
+      "public_network_acl_id": "",
+      "public_route_table_ids": [
+        "rtb-0c2b341a09b1b1b1d"
+      ],
+      "public_subnet_arns": [
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-00b828a8e60b4618b",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-0d9a4cc6f51dabaf0",
+        "arn:aws:ec2:ap-southeast-1:814127428874:subnet/subnet-03b14c4af41895aaf"
+      ],
+      "public_subnets": [
+        "subnet-00b828a8e60b4618b",
+        "subnet-0d9a4cc6f51dabaf0",
+        "subnet-03b14c4af41895aaf"
+      ],
+      "public_subnets_cidr_blocks": [
+        "10.100.0.0/20",
+        "10.100.16.0/20",
+        "10.100.32.0/20"
+      ],
+      "redshift_network_acl_id": "",
+      "redshift_route_table_ids": [
+        "rtb-09f8b4dfd536bece5",
+        "rtb-0173a46973c34d644",
+        "rtb-0f703b39d173ded0f"
+      ],
+      "redshift_subnet_arns": [],
+      "redshift_subnet_group": "",
+      "redshift_subnets": [],
+      "redshift_subnets_cidr_blocks": [],
+      "vgw_id": "",
+      "vpc_arn": "arn:aws:ec2:ap-southeast-1:814127428874:vpc/vpc-0331651366073c8e1",
+      "vpc_cidr_block": "10.100.0.0/16",
+      "vpc_enable_dns_hostnames": true,
+      "vpc_enable_dns_support": true,
+      "vpc_endpoint_apigw_dns_entry": [],
+      "vpc_endpoint_apigw_id": "",
+      "vpc_endpoint_apigw_network_interface_ids": [],
+      "vpc_endpoint_cloudtrail_dns_entry": [],
+      "vpc_endpoint_cloudtrail_id": "",
+      "vpc_endpoint_cloudtrail_network_interface_ids": [],
+      "vpc_endpoint_dynamodb_id": "",
+      "vpc_endpoint_dynamodb_pl_id": "",
+      "vpc_endpoint_ec2_dns_entry": [],
+      "vpc_endpoint_ec2_id": "",
+      "vpc_endpoint_ec2_network_interface_ids": [],
+      "vpc_endpoint_ec2messages_dns_entry": [],
+      "vpc_endpoint_ec2messages_id": "",
+      "vpc_endpoint_ec2messages_network_interface_ids": [],
+      "vpc_endpoint_ecr_api_dns_entry": [],
+      "vpc_endpoint_ecr_api_id": "",
+      "vpc_endpoint_ecr_api_network_interface_ids": [],
+      "vpc_endpoint_ecr_dkr_dns_entry": [],
+      "vpc_endpoint_ecr_dkr_id": "",
+      "vpc_endpoint_ecr_dkr_network_interface_ids": [],
+      "vpc_endpoint_ecs_agent_dns_entry": [],
+      "vpc_endpoint_ecs_agent_id": "",
+      "vpc_endpoint_ecs_agent_network_interface_ids": [],
+      "vpc_endpoint_ecs_dns_entry": [],
+      "vpc_endpoint_ecs_id": "",
+      "vpc_endpoint_ecs_network_interface_ids": [],
+      "vpc_endpoint_ecs_telemetry_dns_entry": [],
+      "vpc_endpoint_ecs_telemetry_id": "",
+      "vpc_endpoint_ecs_telemetry_network_interface_ids": [],
+      "vpc_endpoint_elasticloadbalancing_dns_entry": [],
+      "vpc_endpoint_elasticloadbalancing_id": "",
+      "vpc_endpoint_elasticloadbalancing_network_interface_ids": [],
+      "vpc_endpoint_events_dns_entry": [],
+      "vpc_endpoint_events_id": "",
+      "vpc_endpoint_events_network_interface_ids": [],
+      "vpc_endpoint_kms_dns_entry": [],
+      "vpc_endpoint_kms_id": "",
+      "vpc_endpoint_kms_network_interface_ids": [],
+      "vpc_endpoint_logs_dns_entry": [],
+      "vpc_endpoint_logs_id": "",
+      "vpc_endpoint_logs_network_interface_ids": [],
+      "vpc_endpoint_monitoring_dns_entry": [],
+      "vpc_endpoint_monitoring_id": "",
+      "vpc_endpoint_monitoring_network_interface_ids": [],
+      "vpc_endpoint_s3_id": "",
+      "vpc_endpoint_s3_pl_id": "",
+      "vpc_endpoint_sns_dns_entry": [],
+      "vpc_endpoint_sns_id": "",
+      "vpc_endpoint_sns_network_interface_ids": [],
+      "vpc_endpoint_sqs_dns_entry": [],
+      "vpc_endpoint_sqs_id": "",
+      "vpc_endpoint_sqs_network_interface_ids": [],
+      "vpc_endpoint_ssm_dns_entry": [],
+      "vpc_endpoint_ssm_id": "",
+      "vpc_endpoint_ssm_network_interface_ids": [],
+      "vpc_endpoint_ssmmessages_dns_entry": [],
+      "vpc_endpoint_ssmmessages_id": "",
+      "vpc_endpoint_ssmmessages_network_interface_ids": [],
+      "vpc_id": "vpc-0331651366073c8e1",
+      "vpc_instance_tenancy": "default",
+      "vpc_main_route_table_id": "rtb-0a11994a20ca045ca",
+      "vpc_secondary_cidr_blocks": []
+    }
+  }
+}
